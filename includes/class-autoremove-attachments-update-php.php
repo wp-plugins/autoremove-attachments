@@ -43,7 +43,7 @@ class Autoremove_Attachments_Update_PHP {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		$this->minimum_version = '5.4';
+		$this->minimum_version = '5.3';
 
 		if ( ! $this->check() ) {
 			add_action( 'admin_notices', array( $this, 'update_php_warning' ) );
@@ -100,5 +100,5 @@ class Autoremove_Attachments_Update_PHP {
 			<?php
 		}
 	}
-	
+
 }
