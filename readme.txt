@@ -3,7 +3,7 @@ Contributors: PolygonThemes, EusebiuOprinoiu
 Tags: media, attachment, post, page, custom post type
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License version 3.0
 
 Remove child attachments when parent post, page or custom post type is deleted
