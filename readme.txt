@@ -14,7 +14,7 @@ Autoremove Attachments helps you keep your media library clean by deleting all m
 
 By default, WordPress doesn't remove child attachments leaving orphan files behind. Using this plugin you won't have to manually track and remove them.
 
-= Important =
+= Important! =
 
 You need to make sure that you don't insert the files into multiple posts. If you do and the parent post is deleted you will end up with missing images.
 
