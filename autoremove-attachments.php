@@ -3,7 +3,7 @@
  * Plugin Name: Autoremove Attachments
  * Plugin URI: https://wordpress.org/plugins/autoremove-attachments
  * Description: Autoremove Attachments helps you keep your media library clean by deleting all media files attached to a post when that post gets removed from your website.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Polygon Themes
  * Author URI: https://polygonthemes.com
  * Text Domain: autoremove-attachments
@@ -45,7 +45,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Define plugin constants.
  */
-define( 'AUTOREMOVE_ATTACHMENTS_VERSION', '1.0.1' );                      // Current plugin version
+define( 'AUTOREMOVE_ATTACHMENTS_VERSION', '1.0.2' );                      // Current plugin version
 define( 'AUTOREMOVE_ATTACHMENTS_MAIN_FILE', __FILE__ );                   // Path to main plugin file
 define( 'AUTOREMOVE_ATTACHMENTS_DIR_PATH', plugin_dir_path( __FILE__ ) ); // Path to plugin directory
 define( 'AUTOREMOVE_ATTACHMENTS_DIR_URL', plugin_dir_url( __FILE__ ) );   // URL to plugin directory
