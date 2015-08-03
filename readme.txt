@@ -39,6 +39,9 @@ If you need to use the same image over and over again, upload it from the Media 
 
 == Changelog ==
 
+= Version 1.0.2 =
+* Fixed a bug that was causing media files to be removed when revisions were deleted with wp-cron
+
 = Version 1.0.1 =
 * Minimum required version of PHP set to 5.3
 

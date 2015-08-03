@@ -69,15 +69,13 @@ class Autoremove_Attachments_Admin {
 	 *
 	 * Get the list of attachments for the post we are about to delete and remove them.
 	 *
-	 * @since     1.0.0
-	 * @global    array     $post    Array with details about the current post.
+	 * @since    1.0.0
+	 * @param    int      $post_id    ID of the curent post.
 	 */
-	public function remove_attachments() {
-		global $post;
-
+	public function remove_attachments( $post_id ) {
 		$args = array (
 			'post_type'   => 'attachment',
-			'post_parent' => $post->ID,
+			'post_parent' => $post_id,
 			'post_status' => 'any',
 			'nopaging'    => true,
 		);
@@ -87,7 +85,7 @@ class Autoremove_Attachments_Admin {
 			while ( $query->have_posts() ) {
 				$query->the_post();
 
-				wp_delete_attachment ( $query->post->ID, true );
+				wp_delete_attachment( $query->post->ID, true );
 			}
 		}
 
