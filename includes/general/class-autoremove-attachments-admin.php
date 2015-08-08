@@ -73,23 +73,25 @@ class Autoremove_Attachments_Admin {
 	 * @param    int      $post_id    ID of the curent post.
 	 */
 	public function remove_attachments( $post_id ) {
-		$args = array (
-			'post_type'   => 'attachment',
-			'post_parent' => $post_id,
-			'post_status' => 'any',
-			'nopaging'    => true,
-		);
-		$query = new WP_Query( $args );
+		if ( $post_id ) {
+			$args = array (
+				'post_type'   => 'attachment',
+				'post_parent' => $post_id,
+				'post_status' => 'any',
+				'nopaging'    => true,
+			);
+			$query = new WP_Query( $args );
 
-		if ( $query->have_posts() ) {
-			while ( $query->have_posts() ) {
-				$query->the_post();
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) {
+					$query->the_post();
 
-				wp_delete_attachment( $query->post->ID, true );
+					wp_delete_attachment( $query->post->ID, true );
+				}
 			}
-		}
 
-		wp_reset_postdata();
+			wp_reset_postdata();
+		}
 	}
 
 

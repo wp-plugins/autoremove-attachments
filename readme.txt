@@ -2,7 +2,7 @@
 Contributors: PolygonThemes, EusebiuOprinoiu
 Tags: media, attachment, post, page, custom post type
 Requires at least: 3.5
-Tested up to: 4.2.3
+Tested up to: 4.2.4
 Stable tag: 1.0.2
 License: GNU General Public License version 3.0
 
@@ -38,6 +38,9 @@ Unfortunately, yes! You need to make sure that you don't insert the files into m
 If you need to use the same image over and over again, upload it from the Media Library ( Media > Add New ). This way the image won't be attached to any post and you'll be able to use it without restrictions.
 
 == Changelog ==
+
+= Version 1.0.3 =
+* Added a security check to avoid deleting attachments when the ID of the parent post is invalid
 
 = Version 1.0.2 =
 * Fixed a bug that was causing media files to be removed when revisions were deleted with wp-cron
