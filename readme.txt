@@ -2,7 +2,7 @@
 Contributors: PolygonThemes, EusebiuOprinoiu
 Tags: media, attachment, post, page, custom post type
 Requires at least: 3.5
-Tested up to: 4.2.4
+Tested up to: 4.3.1
 Stable tag: 1.0.3
 License: GNU General Public License version 3.0
 
